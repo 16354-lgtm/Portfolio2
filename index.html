@@ -1,44 +1,184 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang='th'>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ฐิติชญา ชูวัฒน์ | Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>ฐิติชญา ชูวัฒน์ | Portfolio</title>
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+    body{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      overflow:hidden;
+      background: linear-gradient(-45deg, #E9D5FF, #CFE9FF, #DCCBFF, #BDEBFF);
+      background-size:400% 400%;
+      animation:bgMove 12s ease infinite;
+      padding:20px;
+    }
+    @keyframes bgMove{
+      0%{background-position:0% 50%;}
+      50%{background-position:100% 50%;}
+      100%{background-position:0% 50%;}
+    }
+    .circle{
+      position:absolute;
+      border-radius:50%;
+      filter:blur(70px);
+      opacity:0.6;
+      animation:float 8s ease-in-out infinite;
+    }
+    .circle1{
+      width:250px;
+      height:250px;
+      background:#C4A7FF;
+      top:-50px;
+      left:-50px;
+    }
+    .circle2{
+      width:300px;
+      height:300px;
+      background:#8EDBFF;
+      bottom:-80px;
+      right:-80px;
+      animation-delay:2s;
+    }
+    .circle3{
+      width:180px;
+      height:180px;
+      background:#E0B3FF;
+      top:50%;
+      left:50%;
+      animation-delay:4s;
+    }
+
+    @keyframes float{
+      0%,100%{
+        transform:translateY(0);
+      }
+      50%{
+        transform:translateY(-30px);
+      }
+    }
+    .card{
+      width:100%;
+      max-width:1000px;
+      background:rgba(255,255,255,0.28);
+      backdrop-filter:blur(18px);
+      border:1px solid rgba(255,255,255,0.4);
+      border-radius:30px;
+      padding:40px;
+      display:flex;
+      align-items:center;
+      gap:40px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.15);
+      z-index:1;
+    }
+    .image img{
+      width:320px;
+      height:400px;
+      object-fit:cover;
+      border-radius:25px;
+      border:5px solid white;
+      box-shadow:0 10px 30px rgba(0,0,0,0.2);
+      transition:0.4s;
+    }
+
+    .image img:hover{
+      transform:scale(1.05);
+    }
+
+    .content h3{
+      color:#6A5ACD;
+      font-size:20px;
+      letter-spacing:2px;
+      margin-bottom:10px;
+    }
+
+    .content h1{
+      color:#4B3F72;
+      font-size:50px;
+      margin-bottom:10px;
+    }
+    .content h2{
+      color:#5A8DEE;
+      margin-bottom:25px;
+      font-size:28px;
+    }
+    .content p{
+      color:#444;
+      font-size:20px;
+      line-height:40px;
+      margin-bottom:30px;
+    }
+    .btn{
+      display:inline-block;
+      padding:16px 35px;
+      background:linear-gradient(90deg,#A78BFA,#7DD3FC);
+      color:white;
+      text-decoration:none;
+      border-radius:50px;
+      font-size:18px;
+      font-weight:600;
+      transition:0.4s;
+    }
+
+    .btn:hover{
+      transform:translateY(-5px);
+      box-shadow:0 0 25px rgba(125,211,252,0.8);
+    }
+    @media (max-width: 768px){
+      .card{
+        flex-direction:column;
+        text-align:center;
+        padding:30px;
+      }
+      .image img{
+        width:240px;
+        height:300px;
+      }
+      .content h1{
+        font-size:36px;
+      }
+      .content h2{
+        font-size:24px;
+      }
+      .content p{
+        font-size:18px;
+        line-height:34px;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="background">
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-<nav>
-    <h2>Portfolio</h2>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-<section class="hero">
-<div class="card">
-<h1>ฐิติชญา ชูวัฒน์</h1>
-<h3>Student Portfolio</h3>
-<p>
-นักเรียนชั้นมัธยมศึกษาปีที่ 6 <br>
-    <p>โรงเรียนพานทอง</p>
-     <p>แผนการเรียน วิทย์-คณิต</p>
-สนใจด้าน Web Development และ UI Design
-</p>
-<a href="about.html" class="btn">
-About Me
-</a>
-</div>
-</section>
+  <div class='circle circle1'></div>
+  <div class='circle circle2'></div>
+  <div class='circle circle3'></div>
+  <div class='card'>
+    <div class='image'>
+      <img src='cover.jpg' alt='รูปหน้าปกของฐิติชญา ชูวัฒน์'>
+    </div>
+    <div class='content'>
+      <h3>WELCOME TO MY PORTFOLIO</h3>
+      <h1>ฐิติชญา ชูวัฒน์</h1>
+      <h2>Student Portfolio</h2>
+      <p>
+        🎓 ชั้นมัธยมศึกษาปีที่ 6 <br>
+        🏫 โรงเรียนพานทอง <br>
+        🧪 แผนการเรียน วิทยาศาสตร์–คณิตศาสตร์ <br>
+        💜 สนใจด้าน Web Development และการออกแบบเว็บไซต์
+      </p>
+      <a href='#' class='btn'>ยินดีต้อนรับสู่ Portfolio</a>
+    </div>
+  </div>
 </body>
 </html>
