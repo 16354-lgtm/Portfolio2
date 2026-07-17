@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Me | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Prompt',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#F5FCFF,#DDF4FF,#E8E5FF,#D8CCFF);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+color:#444;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,.3);
+backdrop-filter:blur(15px);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#6A4CFF;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#555;
+}
+
+.container{
+max-width:1000px;
+margin:50px auto;
+padding:20px;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+color:#6A4CFF;
+margin-bottom:35px;
+}
+
+.card{
+background:rgba(255,255,255,.4);
+backdrop-filter:blur(15px);
+padding:35px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(106,76,255,.15);
+}
+
+.profile{
+text-align:center;
+margin-bottom:30px;
+}
+
+.profile img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:20px;
+margin-top:25px;
+}
+
+.box h3{
+color:#6A4CFF;
+margin-bottom:15px;
+}
+
+.box p{
+line-height:1.8;
+margin-bottom:8px;
+}
+
+/* Timeline */
+
+.timeline{
+border-left:3px solid #8A4FFF;
+padding-left:25px;
+}
+
+.timeline-item{
+position:relative;
+margin-bottom:25px;
+}
+
+.timeline-item::before{
+content:"";
+position:absolute;
+left:-34px;
+top:8px;
+width:14px;
+height:14px;
+background:#5BC0EB;
+border-radius:50%;
+border:3px solid white;
+}
+
+.timeline-item h4{
+color:#6A4CFF;
+}
+
+footer{
+text-align:center;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Portfolio</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="activities.html">Activities</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+
+<div class="container">
+
+<h1 class="title">About Me</h1>
+
+
+<div class="card">
+
+
+<div class="profile">
+
+<img src="profile.jpg">
+
+<h2>ฐิติชญา ชูวัฒน์</h2>
+
+<p>Student Portfolio</p>
+
+</div>
+
+
+
+<div class="box">
+
+<h3>👤 ข้อมูลส่วนตัว</h3>
+
+<p><b>ชื่อ :</b> ฐิติชญา ชูวัฒน์</p>
+
+<p><b>วันเกิด :</b> วันศุกร์ที่ 23 มกราคม 2552</p>
+
+<p><b>จังหวัด :</b> ชลบุรี</p>
+
+<p><b>งานอดิเรก :</b> ฟังเพลง และดูภาพยนตร์</p>
+
+<p><b>จุดเด่น :</b> ขยัน อดทน และมุ่งมั่นในการทำตามเป้าหมาย</p>
+
+</div>
+
+
+
+<div class="box">
+
+<h3>📚 การศึกษา</h3>
+
+<p><b>🏫 โรงเรียน :</b> โรงเรียนพานทอง</p>
+
+<p><b>🎓 ระดับชั้น :</b> มัธยมศึกษาปีที่ 6</p>
+
+<p><b>📚 แผนการเรียน :</b> วิทยาศาสตร์ - คณิตศาสตร์</p>
+
+</div>
+
+
+
+<div class="box">
+
+<h3>🎓 ประวัติการศึกษา</h3>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h4>มัธยมศึกษาตอนต้น</h4>
+
+<p>
+โรงเรียนวัดท้องคุ้ง "ไพโรจน์ประชาสรรค์"
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<h4>มัธยมศึกษาตอนปลาย</h4>
+
+<p>
+โรงเรียนพานทอง
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="box">
+
+<h3>💬 แนะนำตัว</h3>
+
+<p>
+สวัสดีค่ะ ดิฉันชื่อ ฐิติชญา ชูวัฒน์
+กำลังศึกษาระดับชั้นมัธยมศึกษาปีที่ 6
+เป็นคนขยัน อดทน และพร้อมเรียนรู้สิ่งใหม่ ๆ
+มีความตั้งใจพัฒนาตนเองเพื่อก้าวไปสู่เป้าหมายในอนาคต
+</p>
+
+</div>
+
+
+
+<div class="box">
+
+<h3>🎯 เป้าหมาย</h3>
+
+<p>
+มุ่งหวังศึกษาต่อในระดับมหาวิทยาลัย
+เพื่อพัฒนาความรู้ ความสามารถ และประสบการณ์
+พร้อมนำสิ่งที่เรียนรู้ไปต่อยอดในอนาคต
+และสร้างประโยชน์ให้กับสังคม
+</p>
+
+</div>
+
+
+
+<div class="box">
+
+<h3>📖 คติประจำใจ</h3>
+
+<p>
+"ความพยายามไม่เคยทรยศคนที่ตั้งใจ"
+</p>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+<footer>
+© 2026 | Portfolio | ฐิติชญา ชูวัฒน์
+</footer>
+
+
+</body>
+</html>
