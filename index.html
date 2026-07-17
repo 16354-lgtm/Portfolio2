@@ -3,164 +3,157 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ฐิติชญา ชูวัฒน์ | Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Portfolio | ฐิติชญา ชูวัฒน์</title>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Prompt',sans-serif;
 }
 body{
-    min-height:100vh;
-    background:linear-gradient(135deg,#240046,#5A189A,#7B2CBF,#9D4EDD);
-    display:flex;
-    flex-direction:column;
+overflow:hidden;
+background:linear-gradient(-45deg,#F5FCFF,#DDF4FF,#E8E5FF,#D8CCFF);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
 }
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:22px 8%;
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(15px);
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+.circle{
+position:absolute;
+border-radius:50%;
+backdrop-filter:blur(8px);
+animation:float linear infinite;
+}
+.c1{width:40px;height:40px;left:10%;bottom:-50px;background:rgba(91,192,235,.3);animation-duration:9s;}
+.c2{width:65px;height:65px;right:10%;bottom:-60px;background:rgba(138,79,255,.25);animation-duration:12s;}
+.c3{width:30px;height:30px;left:70%;bottom:-40px;background:rgba(255,255,255,.3);animation-duration:8s;}
+.c4{width:50px;height:50px;left:40%;bottom:-50px;background:rgba(200,220,255,.3);animation-duration:10s;}
+@keyframes float{
+from{transform:translateY(0) rotate(0deg);}
+to{transform:translateY(-110vh) rotate(360deg);}
+}
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,.25);
+backdrop-filter:blur(15px);
 }
 .logo{
-    font-size:28px;
-    font-weight:700;
-    color:#fff;
-}
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:30px;
+font-size:28px;
+font-weight:700;
+color:#6A4CFF;
 }
 nav a{
-    text-decoration:none;
-    color:#fff;
-    font-weight:500;
-    transition:.3s;
+margin-left:20px;
+text-decoration:none;
+color:#555;
+font-weight:500;
 }
 nav a:hover{
-    color:#F3D1FF;
+color:#6A4CFF;
 }
 .hero{
-    flex:1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:40px;
+height:85vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
 }
 .card{
-    width:650px;
-    max-width:95%;
-    background:rgba(255,255,255,.12);
-    backdrop-filter:blur(20px);
-    border:1px solid rgba(255,255,255,.2);
-    border-radius:30px;
-    padding:50px;
-    text-align:center;
-    box-shadow:0 15px 40px rgba(0,0,0,.25);
+width:90%;
+max-width:650px;
+padding:40px;
+text-align:center;
+background:rgba(255,255,255,.35);
+backdrop-filter:blur(18px);
+border-radius:30px;
+box-shadow:0 15px 35px rgba(106,76,255,.15);
 }
-.profile{
-    width:170px;
-    height:170px;
-    margin:auto;
-    border-radius:50%;
-    padding:5px;
-    background:#fff;
+.photo{
+width:150px;
+height:150px;
+margin:0 auto 20px;
+padding:5px;
+background:white;
+border-radius:50%;
 }
-.profile img{
-    width:100%;
-    height:100%;
-    border-radius:50%;
-    object-fit:cover;
+.photo img{
+width:100%;
+height:100%;
+border-radius:50%;
+object-fit:cover;
+}
+h3{
+color:#5BC0EB;
 }
 h1{
-    margin-top:25px;
-    color:white;
-    font-size:42px;
+font-size:42px;
+color:#6A4CFF;
+margin:10px 0;
 }
 h2{
-    margin-top:10px;
-    color:#E9D5FF;
-    font-weight:500;
+font-weight:400;
+color:#666;
+margin-bottom:20px;
 }
 p{
-    margin-top:25px;
-    color:white;
-    line-height:32px;
-    font-size:18px;
+color:#555;
+line-height:1.8;
 }
 .btn{
-    display:inline-block;
-    margin-top:35px;
-    padding:15px 40px;
-    text-decoration:none;
-    border-radius:40px;
-    background:#A855F7;
-    color:white;
-    font-weight:600;
-    transition:.3s;
-}
-.btn:hover{
-    background:#C77DFF;
+display:inline-block;
+margin-top:25px;
+padding:12px 30px;
+background:linear-gradient(90deg,#5BC0EB,#8A4FFF);
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
 }
 footer{
-    text-align:center;
-    padding:18px;
-    color:white;
-    background:rgba(255,255,255,.08);
-}
-@media(max-width:768px){
-nav{
-    flex-direction:column;
-    gap:20px;
-}
-nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-}
-h1{
-    font-size:32px;
-}
-.card{
-    padding:35px;
-}
-.profile{
-    width:140px;
-    height:140px;
-}
+text-align:center;
+padding:15px;
+color:#666;
 }
 </style>
 </head>
 <body>
+<div class="circle c1"></div>
+<div class="circle c2"></div>
+<div class="circle c3"></div>
+<div class="circle c4"></div>
+<header>
+<div class="logo">Portfolio</div>
 <nav>
-<div class="logo">
-Portfolio
-</div>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="skills.html">Skills</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Skills</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
 </nav>
+</header>
 <section class="hero">
 <div class="card">
-<div class="profile">
+<div class="photo">
 <img src="profile.jpg" alt="Profile">
 </div>
+<h3>Welcome to My Portfolio</h3>
 <h1>ฐิติชญา ชูวัฒน์</h1>
 <h2>Student Portfolio</h2>
 <p>
-นักเรียนระดับชั้นมัธยมศึกษาปีที่ 6<br>
+ยินดีต้อนรับสู่เว็บไซต์ Portfolio
+ที่จัดทำขึ้นเพื่อรวบรวมข้อมูลส่วนตัว
+ประวัติการศึกษา ความสามารถ และผลงาน
+เพื่อใช้ประกอบการศึกษาต่อ
 </p>
-<a href="about.html" class="btn">
-Explore My Portfolio
-</a>
+<a href="#" class="btn">Explore Portfolio</a>
 </div>
 </section>
 <footer>
