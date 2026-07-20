@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | ฐิติชญา ชูวัฒน์</title>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Prompt',sans-serif;
+}
+body{
+    overflow-x:hidden;
+    background:linear-gradient(-45deg,#F5FCFF,#DDF4FF,#E8E5FF,#D8CCFF);
+    background-size:400% 400%;
+    animation:bg 12s ease infinite;
+}
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(255,255,255,.25);
+    backdrop-filter:blur(15px);
+}
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#6A4CFF;
+}
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+    transition:.3s;
+}
+nav a:hover{
+    color:#6A4CFF;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:80vh;
+    padding:30px;
+}
+.card{
+    width:100%;
+    max-width:700px;
+    background:rgba(255,255,255,.40);
+    backdrop-filter:blur(20px);
+    border-radius:30px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(106,76,255,.15);
+}
+
+.photo{
+    width:170px;
+    height:170px;
+    margin:auto;
+    border-radius:50%;
+    overflow:hidden;
+    border:5px solid white;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+h1{
+    color:#6A4CFF;
+    margin-top:20px;
+    font-size:38px;
+}
+.subtitle{
+    color:#666;
+    margin:10px 0 30px;
+}
+.info{
+    background:white;
+    padding:18px 20px;
+    border-radius:15px;
+    margin:15px 0;
+    text-align:left;
+    font-size:18px;
+    color:#555;
+    border-left:6px solid #8A4FFF;
+    transition:.3s;
+}
+.info:hover{
+    transform:translateX(8px);
+}
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:13px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(90deg,#5BC0EB,#8A4FFF);
+    font-weight:600;
+    transition:.3s;
+}
+.btn:hover{
+    transform:scale(1.05);
+}
+footer{
+    text-align:center;
+    padding:20px;
+    color:#666;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">Portfolio</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="activities.html">Activities</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<div class="container">
+<div class="card">
+<div class="photo">
+<img src="images/profile.jpg" alt="Profile">
+</div>
+<h1>Contact Me</h1>
+<p class="subtitle">
+สามารถติดต่อฉันได้ผ่านช่องทางด้านล่าง
+</p>
+<div class="info">
+📱 โทรศัพท์ : 098-306-1664
+</div>
+<div class="info">
+📧 E-mail : punim2312552@gmail.com
+</div>
+<div class="info">
+📘 Facebook : Thitichaya Ch
+</div>
+<div class="info">
+📷 Instagram : @thpunim
+</div>
+<a href="index.html" class="btn">
+🏠 กลับสู่หน้าหลัก
+</a>
+</div>
+</div>
+<footer>
+© 2026 | Portfolio | ฐิติชญา ชูวัฒน์
+</footer>
+</body>
+</html>
