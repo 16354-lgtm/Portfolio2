@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Activities | ฐิติชญา ชูวัฒน์</title>
+<title>My Goal | ฐิติชญา ชูวัฒน์</title>
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 *{
@@ -12,12 +12,14 @@
     box-sizing:border-box;
     font-family:'Prompt',sans-serif;
 }
+
 body{
     overflow-x:hidden;
     background:linear-gradient(-45deg,#F5FCFF,#DDF4FF,#E8E5FF,#D8CCFF);
     background-size:400% 400%;
     animation:bg 12s ease infinite;
 }
+
 @keyframes bg{
     0%{background-position:0% 50%;}
     50%{background-position:100% 50%;}
@@ -31,9 +33,8 @@ header{
     padding:20px 8%;
     background:rgba(255,255,255,.25);
     backdrop-filter:blur(15px);
-    position:sticky;
-    top:0;
 }
+
 .logo{
     font-size:28px;
     font-weight:700;
@@ -46,69 +47,58 @@ nav a{
     font-weight:500;
     transition:.3s;
 }
-
 nav a:hover{
     color:#6A4CFF;
 }
-
 .container{
     width:90%;
-    max-width:1200px;
-    margin:50px auto;
+    max-width:950px;
+    margin:60px auto;
 }
-.title{
+.card{
+    background:rgba(255,255,255,.40);
+    backdrop-filter:blur(18px);
+    border-radius:30px;
+    padding:45px;
+    box-shadow:0 15px 35px rgba(106,76,255,.15);
+}
+h1{
     text-align:center;
     color:#6A4CFF;
+    font-size:42px;
     margin-bottom:10px;
-    font-size:40px;
 }
 .subtitle{
     text-align:center;
     color:#666;
     margin-bottom:40px;
+    font-size:18px;
 }
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+.box{
+    background:white;
+    border-left:6px solid #8A4FFF;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
 }
-.card{
-    background:rgba(255,255,255,.45);
-    backdrop-filter:blur(18px);
-    border-radius:25px;
-    overflow:hidden;
-    box-shadow:0 15px 35px rgba(106,76,255,.15);
-    transition:.3s;
-}
-.card:hover{
-    transform:translateY(-8px);
-}
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-.content{
-    padding:20px;
-}
-.content h3{
+.box h2{
     color:#6A4CFF;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
-.content p{
+.box p{
     color:#555;
-    line-height:1.8;
+    line-height:1.9;
 }
 .btn-group{
     display:flex;
     justify-content:space-between;
-    margin-top:50px;
+    margin-top:40px;
 }
 .btn{
-    display:inline-block;
-    padding:12px 30px;
     text-decoration:none;
     color:white;
+    padding:12px 30px;
     border-radius:30px;
     background:linear-gradient(90deg,#5BC0EB,#8A4FFF);
     font-weight:600;
@@ -117,6 +107,7 @@ nav a:hover{
 .btn:hover{
     transform:scale(1.05);
 }
+
 footer{
     text-align:center;
     padding:20px;
@@ -131,52 +122,52 @@ footer{
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="skills.html">Skills</a>
-<a href="activities.html">Activities</a>
+<a href="activities.html">My Goal</a>
 <a href="contact.html">Contact</a>
 </nav>
 </header>
 <div class="container">
-<h1 class="title">Activities</h1>
-<p class="subtitle">
-กิจกรรมที่เคยเข้าร่วมและประสบการณ์ที่ได้รับ
-</p>
 
-<div class="gallery">
 <div class="card">
-<img src="images/activity1.jpg" alt="Activity">
-<div class="content">
-<h3>กิจกรรมของโรงเรียน</h3>
+<h1>My Goal</h1>
+<p class="subtitle">
+เป้าหมายในการศึกษาต่อและแรงบันดาลใจ
+</p>
+```html
+<div class="box">
+<h2>🎯 เป้าหมายในการศึกษาต่อ</h2>
 <p>
-เข้าร่วมกิจกรรมต่าง ๆ ของโรงเรียน เพื่อฝึกความรับผิดชอบ
-การทำงานร่วมกับผู้อื่น และการมีส่วนร่วมในกิจกรรมส่วนรวม
+ดิฉันมีความมุ่งมั่นที่จะศึกษาต่อในคณะเภสัชศาสตร์
+เพราะมีความสนใจด้านวิทยาศาสตร์และการดูแลสุขภาพ
+พร้อมทั้งต้องการพัฒนาความรู้และทักษะ
+เพื่อนำไปประกอบวิชาชีพที่สามารถช่วยเหลือและดูแลผู้คนได้
 </p>
 </div>
-</div>
-<div class="card">
-<img src="images/activity2.jpg" alt="Activity">
-<div class="content">
-<h3>กิจกรรมจิตอาสา</h3>
+<div class="box">
+<h2>💊 เหตุผลที่เลือกคณะเภสัชศาสตร์</h2>
 <p>
-เข้าร่วมกิจกรรมจิตอาสาและกิจกรรมบำเพ็ญประโยชน์
-เพื่อปลูกฝังจิตสำนึกในการช่วยเหลือผู้อื่นและสังคม
+ดิฉันเชื่อว่าวิชาชีพเภสัชกรเป็นวิชาชีพที่มีความสำคัญ
+ต้องอาศัยความรับผิดชอบ ความละเอียดรอบคอบ
+และการเรียนรู้อย่างต่อเนื่อง
+ซึ่งเป็นคุณลักษณะที่ดิฉันตั้งใจพัฒนาตนเองอยู่เสมอ
+จึงมีความตั้งใจที่จะศึกษาต่อในคณะเภสัชศาสตร์
+เพื่อเติบโตเป็นบุคลากรที่มีคุณภาพในอนาคต
 </p>
 </div>
-</div>
-<div class="card">
-<img src="images/activity3.jpg" alt="Activity">
-<div class="content">
-<h3>กิจกรรมการเรียนรู้</h3>
+<div class="box">
+<h2>🌟 เป้าหมายในอนาคต</h2>
 <p>
-เข้าร่วมกิจกรรมและการอบรมที่ช่วยเสริมสร้างความรู้
-พัฒนาทักษะการเรียนรู้ และเปิดประสบการณ์ใหม่ ๆ
-เพื่อนำมาพัฒนาตนเองอยู่เสมอ
+มุ่งมั่นพัฒนาตนเองทั้งด้านวิชาการ
+ทักษะการสื่อสาร การทำงานร่วมกับผู้อื่น
+และจริยธรรมในวิชาชีพ
+เพื่อก้าวสู่การเป็นเภสัชกรที่มีความรู้
+มีคุณธรรม และสามารถสร้างประโยชน์ให้แก่สังคมได้
 </p>
-</div>
-</div>
 </div>
 <div class="btn-group">
 <a href="skills.html" class="btn">← Skills</a>
 <a href="contact.html" class="btn">Contact →</a>
+</div>
 </div>
 </div>
 <footer>
@@ -184,3 +175,4 @@ footer{
 </footer>
 </body>
 </html>
+```
